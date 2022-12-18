@@ -1,0 +1,72 @@
+.container {
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+.clear-button {
+    /*Reset's every elements apperance*/
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    color: #26589F;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.42rem;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+}
+
+.image-button {
+    transition: all .125s ease-in-out;
+    margin-left: 1px;
+}
+
+.image-button img {
+    width: 15vw;
+}
+
+.image-button:FIRST-CHILD {
+    margin-left: 0;
+}
+
+.image-button:hover, .image-button:active {
+    transform: scale(1.125)
+}
+
+.image-button:active {
+
+}
+
+
+.milk-number-text {
+    color: grey;
+    font-size: 0.8em;
+}
