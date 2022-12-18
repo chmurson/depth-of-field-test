@@ -4,15 +4,16 @@
   left: 0
   width: 100%
   height: 100%
-  display: flex
-  align-items: center
-  justify-content center
 
   .image-modal-content
     position: relative
-    width auto
     max-width 100vw
     max-height 100vh
+    width 100vw
+    height 100vh
+    display: flex
+    align-items: center
+    justify-content center
 
   .label
     position: absolute
@@ -25,22 +26,26 @@
     margin 0
     z-index 1
 
-  img
+  img.main-image
     max-height: 100vh
     max-width: 100%
     margin: 0 auto
     left 0
-    top 0
     position relative
     z-index 0
+
   .image-zoom
-    border-radius 60px
+    top: 0
+    left: 0
+    display none
+    border-radius 15%
     position absolute
-    height 240px
-    width 240px
+    height 140px
+    width 140px
     object-fit none
     border 1px black solid
     z-index 0
+    transform scale(3)
 
   .close-button
     position absolute
@@ -62,7 +67,7 @@
 
 }
 
-.image-modal-content .instructions {
+.instructions {
   position: absolute
   right: 0.5em
   bottom: 0.5em
@@ -70,10 +75,10 @@
   color: white
   background-color: rgba(255, 255, 255, 0.125)
   padding: 0.5em
-}
 
-.image-modal-content .instructions span {
-  font-family: monospace
+  span {
+    font-family: monospace
+  }
 }
 
 .image-button-wrapper {

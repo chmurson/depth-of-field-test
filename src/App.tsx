@@ -37,14 +37,11 @@ function App() {
     )
   }
 
-  console.log(selected)
-
   useEffect(() => {
     function changeSelected(e: KeyboardEvent) {
       if (!selected) {
         return
       }
-      console.log(e.key)
 
       function modArrayIndex<T>(array: T[], currentValue: T, mod: number) {
         const index = array.indexOf(currentValue) || 0
@@ -110,6 +107,7 @@ function App() {
             1.2m
           </li>
           <li>📸 Fuji X-E3 with 33m lens</li>
+          <li>Best to display this page with Chrome or similar</li>
         </ul>
         <p></p>
         <div>
